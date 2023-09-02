@@ -14,6 +14,12 @@ if (navToggle && navMenu && navClose) {
 }
 
 /*=============== REMOVE MENU MOBILE ===============*/
+const navLink = document.querySelectorAll(".nav__link");
+
+const linkAction = () =>
+    document.getElementById("nav-menu").classList.remove("show-menu");
+
+navLink.forEach((nL) => nL.addEventListener("click", linkAction));
 
 /*=============== SHADOW HEADER ===============*/
 
