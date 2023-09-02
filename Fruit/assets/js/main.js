@@ -31,6 +31,13 @@ const shadowHeader = () => {
 window.addEventListener("scroll", shadowHeader);
 
 /*=============== SHOW SCROLL UP ===============*/
+const scrollup = () => {
+    document
+        .getElementById("scroll-up")
+        .classList[window.scrollY >= 350 ? "add" : "remove"]("show-scroll");
+};
+
+window.addEventListener("scroll", scrollup);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
