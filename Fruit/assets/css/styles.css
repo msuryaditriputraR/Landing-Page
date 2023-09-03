@@ -827,4 +827,41 @@ body.dark-theme {
   }
 }
 
+@media screen and (min-width: 768px) {
+
+  .home__container,
+  .about__container {
+    grid-template-columns: repeat(2, 350px);
+    align-items: center;
+  }
+
+  .home__data,
+  .about__data,
+  .about__data .section__title {
+    text-align: initial;
+  }
+
+  .home__fruit {
+    left: 10rem;
+  }
+
+  .enjoy__container,
+  .popular__container {
+    grid-template-columns: repeat(2, 250px);
+  }
+
+  .about__img {
+    order: -1;
+  }
+
+  .join__form {
+    width: 600px;
+    justify-self: center;
+  }
+
+  .footer__data {
+    grid-template-columns: repeat(4, max-content);
+  }
+}
+
 /* For large devices */
