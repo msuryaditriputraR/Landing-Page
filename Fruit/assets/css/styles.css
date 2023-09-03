@@ -797,6 +797,34 @@ body.dark-theme {
 }
 
 /* For medium devices */
+@media screen and (min-width: 576px) {
 
+  .home__container,
+  .about__container {
+    grid-template-columns: 370px;
+    justify-content: center;
+  }
+
+  .join__description {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .join__form {
+    background-color: var(--body-color);
+    padding: .5rem;
+    border-radius: 4rem;
+    grid-template-columns: 1fr max-content;
+    transition: background-color .4s;
+  }
+
+  .join__input {
+    padding: 1.25rem 1rem;
+  }
+
+  .footer__data {
+    grid-template-columns: repeat(3, max-content);
+  }
+}
 
 /* For large devices */
